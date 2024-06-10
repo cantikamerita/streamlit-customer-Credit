@@ -3,7 +3,13 @@ import pickle
 import streamlit as st
 
 # membaca model
-Customer_Credit_model = pickle.load(open('credit_customer.sav', 'rb'))
+import os
+
+# Mendapatkan path absolut ke file credit_customer.sav
+model_path = os.path.join(os.path.dirname(__file__), 'credit_customer.sav')
+
+# Membaca model
+Customer_Credit_model = pickle.load(open(model_path, 'rb'))
 
 # judul web
 st.title('Prediksi Customer Credit')
