@@ -21,7 +21,7 @@ credit_history = st.text_input('3. Input Credit History ( 0.0 = all paid , 1.0 =
 
 credit_amount = st.text_input('4. Input Credit Amount')
 
-savings_status = st.text_input(' 5. Input Saving Status (  0.0 = no known savings, 1.1 = there are known savings )')
+savings_status = st.text_input(' 5. Input Saving Status (  0.0 = no known savings, 1.0 = there are known savings )')
 
 employment = st.text_input( '6. Input Employment ( 0.0 = unemployed , 1.0 = working  )')
 
