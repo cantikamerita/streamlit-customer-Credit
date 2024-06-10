@@ -3,7 +3,7 @@ import pickle
 import os
 
 # Verifikasi dan memuat model
-file_path = 'credit_customer.sav'
+file_path = 'credit_customers.sav'
 if os.path.exists(file_path):
     with open(file_path, 'rb') as file:
         Customer_Credit_model = pickle.load(file)
