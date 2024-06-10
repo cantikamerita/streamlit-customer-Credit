@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 # membaca model
-Customer_Credit_model = pickle.load(open('credit_customers.sav', 'rb'))
+Customer_Credit_model = pickle.load(open('/path/to/your/file/credit_customers.sav', 'rb'))
 
 # judul web
 st.title('Prediksi Customer Credit')
