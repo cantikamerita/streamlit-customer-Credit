@@ -6,11 +6,11 @@ import os
 file_path = 'credit_customers.sav'
 if os.path.exists(file_path):
     with open(file_path, 'rb') as file:
-        Customer_Credit_model = pickle.load(file)
+        Customer_Credit_model = pickle.load(open('/path/to/your/file/credit_customers.sav', 'rb'))
 else:
     st.error(f"File not found: {file_path}")
 
-# Judul aplikasi web
+# judul web
 st.title('Prediksi Customer Credit')
 
 # membagi Kolom
