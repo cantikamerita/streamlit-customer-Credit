@@ -6,7 +6,7 @@ import os
 file_path = 'credit_customers.sav'
 if os.path.exists(file_path):
     with open(file_path, 'rb') as file:
-        Customer_Credit_model = pickle.load(open('/path/to/your/file/credit_customers.sav', 'rb'))
+        Customer_Credit_model = pickle.load(open(credit_customers.sav', 'rb'))
 else:
     st.error(f"File not found: {file_path}")
 
