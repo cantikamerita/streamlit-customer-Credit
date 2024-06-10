@@ -1,11 +1,16 @@
-import pickle
-
 import streamlit as st
+import pickle
+import os
 
-# membaca model
-Customer_Credit_model = pickle.load(open('/path/to/your/file/credit_customers.sav', 'rb'))
+# Verifikasi dan memuat model
+file_path = 'credit_customers.sav'
+if os.path.exists(file_path):
+    with open(file_path, 'rb') as file:
+        Customer_Credit_model = pickle.load(file)
+else:
+    st.error(f"File not found: {file_path}")
 
-# judul web
+# Judul aplikasi web
 st.title('Prediksi Customer Credit')
 
 # membagi Kolom
