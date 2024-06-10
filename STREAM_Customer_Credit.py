@@ -13,56 +13,37 @@ else:
 # judul web
 st.title('Prediksi Customer Credit')
 
-# membagi Kolom
-col1, col2 = st.columns(2)
+checking_status = st.text_input('Input Checking Status ( 0.0 = Checking ; 1.0 = No Checking)')
 
-with col1 :
-    checking_status = st.text_input('Input Checking Status ( 0.0 = Checking ; 1.0 = No Checking)')
+duration = st.text_input('Input Duration')
 
-with col2 :
-    duration = st.text_input('Input Duration')
+credit_history = st.text_input('Input Credit History ( 0.0 = all paid , 1.0 = existing paid ,2.0 = delayed previously , 3.0 = critical/other existing credit)')
 
-with col1 :
-    credit_history = st.text_input('Input Credit History ( 0.0 = all paid , 1.0 = existing paid ,2.0 = delayed previously , 3.0 = critical/other existing credit)')
+credit_amount = st.text_input('Input Credit Amount')
 
-with col2 :
-    credit_amount = st.text_input('Input Credit Amount')
+savings_status = st.text_input('Input Saving Status (  0.0 = no known savings, 1.1 = there are known savings )')
 
-with col1 :
-    savings_status = st.text_input('Input Saving Status (  0.0 = no known savings, 1.1 = there are known savings )')
+employment = st.text_input('Input Employment ( 0.0 = unemployed , 1.0 = working  )')
 
-with col2 :
-    employment = st.text_input('Input Employment ( 0.0 = unemployed , 1.0 = working  )')
+installment_commitment = st.text_input('Input Installment Comitment')
 
-with col1 :
-    installment_commitment = st.text_input('Input Installment Comitment')
+personal_status = st.text_input('Input Personal Status ( 0.0 = married , 1.0 = single )')
 
-with col2 :
-     personal_status = st.text_input('Input Personal Status ( 0.0 = married , 1.0 = single )')
+other_parties = st.text_input('Input Other Parties ( 0.0 = co applicant ,1.0 = guarantor, 2.0 = none )')
 
-with col1 :
-    other_parties = st.text_input('Input Other Parties ( 0.0 = co applicant ,1.0 = guarantor, 2.0 = none )')
+residence_since = st.text_input('Input Residence Since')
 
-with col2 :
-    residence_since = st.text_input('Input Residence Since')
+age = st.text_input('Input Age')
 
-with col1 :
-    age = st.text_input('Input Age')
+housing = st.text_input('Input Housing ( 0.0 = for free , 1.0 = own )')
 
-with col2 : 
-    housing = st.text_input('Input Housing ( 0.0 = for free , 1.0 = own )')
+existing_credits = st.text_input('Input Existing Credits')
 
-with col1 :
-    existing_credits = st.text_input('Input Existing Credits')
+job = st.text_input('Input Job ( 0.0 = skilled , 1.0 = unskilled )')
 
-with col2 :
-    job = st.text_input('Input Job ( 0.0 = skilled , 1.0 = unskilled )')
+num_dependents = st.text_input('Input Num Dependents')
 
-with col1 :
-    num_dependents = st.text_input('Input Num Dependents')
-
-with col2 :
-    own_telephone = st.text_input('Input Own Telephone ( 0.0 = none , 1.0 = yes)')
+own_telephone = st.text_input('Input Own Telephone ( 0.0 = none , 1.0 = yes)')
 
 # Code untuk prediksi
 CustomerCredit_prediksi = ''
