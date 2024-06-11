@@ -17,7 +17,7 @@ checking_status = st.text_input('1. Input Checking Status ( 0.0 = Checking ; 1.0
 
 duration = st.text_input('2. Input Duration')
 
-credit_history = st.text_input('3. Input Credit History ( 0.0 = all paid , 1.0 = existing paid ,2.0 = delayed previously , 3.0 = critical/other existing credit)')
+credit_history = st.text_input('3. Input Credit History ( 0.0 =all paid , 1.0 = critical/other existing credit ,2.0 = delayed previously , 3.0 = existing paid)')
 
 credit_amount = st.text_input('4. Input Credit Amount')
 
